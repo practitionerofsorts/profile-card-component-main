@@ -1,0 +1,118 @@
+:root{
+--Dark-cyan: hsl(185, 75%, 39%);
+--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+--Dark-grayish-blue: hsl(227, 10%, 46%);
+--Dark-gray: hsl(0, 0%, 59%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--Dark-cyan);
+    background-image: url("bg-pattern-top.svg"),
+    url("bg-pattern-bottom.svg");
+    background-position: top left,
+    bottom right ;
+    background-repeat: no-repeat;
+    background-size: cover,cover ;
+    
+}
+img{
+    width: 100%;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    max-width: 340px;
+
+    margin: auto;
+    border-radius: 0.7rem;
+}
+.bg{
+    border-radius: 0.7rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.profile{
+    position: absolute;
+    border: 5px solid white;
+    border-radius: 50%;
+    top: 6rem;
+    width: 100%;
+    max-width: 6rem;
+
+}
+.victor{
+    padding-top: 3.5rem;
+}
+.london{
+    width: 100%;
+    text-align: center;
+    margin-top: -0.5rem;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    border: 1px solid var(--Dark-gray);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.stats{
+    display: flex;
+    flex-direction: row;
+    gap: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+    font-size: 10px;  
+    color: var(--Dark-gray); 
+    width: 100%;
+}
+.victor{
+    color: var(--Dark-gray);
+    font-size: 18px;
+}
+.london{
+    font-size: 13px;
+    color: var(--Dark-gray); 
+}
+/* .box p{
+    color: var(--Dark-gray);
+   font-size: 12px;
+} */
+.weight{
+    font-weight: 700;
+    color: black;
+    font-size: 18px;
+    width: 100%;
+}
+
+
+@media(max-width:375px){
+.box{
+    width: 90%;
+
+    /* margin: 9rem auto; */
+}
+}
+
+@media(min-width:1000px){
+    body{
+        max-height: 3rem;
+
+    }
+    .box{
+        width: 90%;
+    margin: auto;
+        /* margin: 9rem auto; */
+    }
+    }
